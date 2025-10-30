@@ -3,6 +3,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.configuration.ConfigurationException;
 import org.junit.jupiter.api.Test;
+import utils.Utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -64,7 +65,7 @@ public class DailyFinanceRestAssured {
     }
 
 @Test
-    public void useLogin() throws ConfigurationException {
+    public void userLogin() throws ConfigurationException {
         RestAssured.baseURI="https://dailyfinanceapi.roadtocareer.net";
         Response res= given().contentType("application/json").body("{\"email\":\"onetwo5@gmail.com\",\"password\":\"12345\"}")
                 .when().post("/api/auth/login");
