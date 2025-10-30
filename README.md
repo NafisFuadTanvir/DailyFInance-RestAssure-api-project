@@ -22,7 +22,7 @@ i. Edit any item name
 
 j. Delete any item from the item list
 
-3. automate the collection using Rest Assured.
+3. automate the collection using Rest Assured. Rest Assured project must follow the POM architecture
 
 ## postman collection documentation link :- https://documenter.getpostman.com/view/39155864/2sB3WnwMVn
    
